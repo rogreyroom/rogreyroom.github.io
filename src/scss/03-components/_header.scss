@@ -6,23 +6,27 @@
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
-    border: 4px solid var(--c-medium-grey-ui02);
-    padding: 2px;
+    border: 3px solid var(--c-medium-grey-ui02);
+    padding: 3px;
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
+    line-height: 2.25rem;
     color: var(--c-black-ui04);
+    margin: 1rem 0 0.5rem 0;
   }
 
   &__content {
-    font-weight: var(--fw-medium);
-    font-size: 0.9rem;
-    line-height: 2;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
     color: var(--c-dark-grey-ui03);
+    margin: 0 0 2.5rem 0;
   }
 
   &__link {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
     color: var(--c-blue-primary-03);
 
     &:hover,

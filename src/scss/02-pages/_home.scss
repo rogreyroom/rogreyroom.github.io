@@ -1,12 +1,15 @@
 // Skills
 .skills {
-    padding: 0 1rem;
+  padding: 3.75rem 1rem 2.5rem 1rem;
 
   &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: var(--c-black-ui04);
     text-align: center;
     border-bottom: 2px solid var(--c-medium-grey-ui02);
-    padding-bottom: 8px;
+    margin: 0;
+    padding-bottom: 0.75rem;
   }
 }
 
@@ -14,11 +17,14 @@
 .knowledge,
 .know-something,
 .learn {
-  padding: 1rem 0;
+  padding: 3.875rem 0 0 0;
 
   &__title {
+    font-size: 1.375rem;
+    line-height: 2rem;
     color: var(--c-black-ui04);
-    line-height: 3rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
     display: block;
     position: relative;
 
@@ -27,7 +33,8 @@
       display: block;
       width: 2.5rem;
       height: 4px;
-      top: 0;
+      position: absolute;
+      top: -0.5rem;
       left: 0;
     }
   }
@@ -35,6 +42,7 @@
   &__list {
     list-style: none;
     padding-left: 0;
+    margin: 0;
   }
 
   &__item {
@@ -53,8 +61,8 @@
 
   &__text {
     color: var(--c-dark-grey-ui03);
-    font-size: 0.9rem;
-    line-height: 2rem;
+    font-size: 0.875rem;
+    line-height: 2.25rem;
     display: inline-block;
     margin: 4px 0;
   }
@@ -102,24 +110,29 @@
 
 // Projects
 .projects {
-    background-color: var(--c-light-grey-ui01);
-    padding: 3rem 1rem;
+  background-color: var(--c-light-grey-ui01);
+  margin-top: 2.5rem;
+  padding-bottom: 5rem;
 
-    &__header {
-        margin: 2rem 0;
-        text-align: center;
-    }
+  &__header {
+    padding: 5rem 1rem 2rem 1rem;
+    margin: rem 0;
+  }
 
-    &__title {
-        color: var(--c-black-ui04);
-        margin-bottom: .5rem;
-    }
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    color: var(--c-black-ui04);
+    margin-bottom: 0.5rem;
+  }
 
-    &__sub-title {
-        color: var(--c-dark-grey-ui03);
-        line-height: 2rem;
-        margin: 0;
-    }
+  &__sub-title {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: var(--c-dark-grey-ui03);
+    margin: 0;
+  }
 }
 
 // Contact
