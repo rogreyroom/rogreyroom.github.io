@@ -1,0 +1,49 @@
+// Header
+.header {
+  &__image {
+    object-fit: cover;
+    object-position: center left;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 3px solid var(--c-medium-grey-ui02);
+    padding: 3px;
+  }
+
+  &__title {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+    color: var(--c-black-ui04);
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  &__content {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: var(--c-dark-grey-ui03);
+    margin: 0 0 2.5rem 0;
+  }
+
+  &__link {
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: var(--c-blue-primary-03);
+
+    &:hover,
+    &:focus {
+      color: var(--c-blue-primary-02);
+    }
+
+    &--mailto {
+      text-decoration: none;
+      border-bottom: 2px solid var(--c-blue-primary-03);
+      padding-bottom: 4px;
+
+      &:hover,
+      &:focus {
+        color: var(--c-blue-primary-02);
+        border-bottom-color: var(--c-blue-primary-02);
+      }
+    }
+  }
+}
