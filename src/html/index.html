@@ -61,7 +61,7 @@
     </header>
     <main class="main">
       <section class="skills" id="skills">
-        <h2>My skills</h2>
+        <h2 class="skills__title">My skills</h2>
         <section class="knowledge">
           <h3 class="knowledge__title">Working knowledge</h3>
           <ul class="knowledge__list">
@@ -128,7 +128,7 @@
           </ul>
         </section>
         <section class="know-something">
-          <h3 class="known-something__title">Know something about</h3>
+          <h3 class="know-something__title">Know something about</h3>
           <ul class="know-something__list">
             <li class="know-something__item">
               <p class="know-something__text">
@@ -241,32 +241,34 @@
             some projects. Here’s the list of things I’ve done so far.
           </p>
         </header>
-        <section class="github-repo">
-          <img
-            src="assets/images/github.svg"
-            alt="GitHub logo"
-            class="github-repo__image"
-          />
-          <h3 class="github-repo__title">
-            simple-editor
-          </h3>
-          <p class="github-repo__description">
-            simple localStorage notebook
-          </p>
-          <footer class="github-repo__footer">
-            <ul class="github-repo__list">
-              <li class="github-repo__item">
+        <section class="card">
+          <div class="card__content">
+            <img
+              src="assets/images/github.svg"
+              alt="GitHub logo"
+              class="card__image"
+            />
+            <h3 class="card__title">
+              simple-editor
+            </h3>
+            <p class="card__description">
+              simple localStorage notebook
+            </p>
+          </div>
+          <footer class="card__footer">
+            <ul class="card__list">
+              <li class="card__item card__item--website">
                 <a
                   href="https://rogreyroom.github.io/simple-editor/"
-                  class="github-repo__link github-repo__link--website"
+                  class="card__link"
                 >
                   Demo
                 </a>
               </li>
-              <li class="github-repo__item">
+              <li class="card__item card__item--repo">
                 <a
                   href="https://github.com/rogreyroom/simple-editor"
-                  class="github-repo__link github-repo__link--repo"
+                  class="card__link"
                 >
                   GitHub
                 </a>
@@ -286,13 +288,15 @@
         </p>
         <ul class="contact__social-list">
           <li class="contact__social-item">
-            <a href="http://" class="contact__social-link">
-              <img src="assets/images/github.svg" alt="GitHub logo" />
-            </a>
-          </li>
-          <li class="contact__social-item">
-            <a href="http://" class="contact__social-link">
-              <img src="assets/images/github.svg" alt="GitHub logo" />
+            <a
+              href="https://github.com/rogreyroom/"
+              class="contact__social-link"
+            >
+              <img
+                src="assets/images/github-white.svg"
+                alt="GitHub logo"
+                class="contact__social-icon"
+              />
             </a>
           </li>
         </ul>

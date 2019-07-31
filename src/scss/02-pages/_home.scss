@@ -1,0 +1,125 @@
+// Skills
+.skills {
+    padding: 0 1rem;
+
+  &__title {
+    color: var(--c-black-ui04);
+    text-align: center;
+    border-bottom: 2px solid var(--c-medium-grey-ui02);
+    padding-bottom: 8px;
+  }
+}
+
+// Knowledge
+.knowledge,
+.know-something,
+.learn {
+  padding: 1rem 0;
+
+  &__title {
+    color: var(--c-black-ui04);
+    line-height: 3rem;
+    display: block;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 2.5rem;
+      height: 4px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__item {
+    display: block;
+    &::before {
+      content: '';
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 0.8rem;
+      height: 0.8rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__text {
+    color: var(--c-dark-grey-ui03);
+    font-size: 0.9rem;
+    line-height: 2rem;
+    display: inline-block;
+    margin: 4px 0;
+  }
+}
+
+.knowledge {
+  &__title {
+    &::before {
+      background-color: var(--c-secondary-green);
+    }
+  }
+
+  &__item {
+    &::before {
+      background-image: url('../images/check-green.svg');
+    }
+  }
+}
+.know-something {
+  &__title {
+    &::before {
+      background-color: var(--c-secondary-purple);
+    }
+  }
+
+  &__item {
+    &::before {
+      background-image: url('../images/check-purple.svg');
+    }
+  }
+}
+.learn {
+  &__title {
+    &::before {
+      background-color: var(--c-secondary-blue);
+    }
+  }
+
+  &__item {
+    &::before {
+      background-image: url('../images/check-blue.svg');
+    }
+  }
+}
+
+// Projects
+.projects {
+    background-color: var(--c-light-grey-ui01);
+    padding: 3rem 1rem;
+
+    &__header {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    &__title {
+        color: var(--c-black-ui04);
+        margin-bottom: .5rem;
+    }
+
+    &__sub-title {
+        color: var(--c-dark-grey-ui03);
+        line-height: 2rem;
+        margin: 0;
+    }
+}
+
+// Contact

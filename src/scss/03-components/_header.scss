@@ -1,0 +1,45 @@
+// Header
+.header {
+  &__image {
+    object-fit: cover;
+    object-position: center left;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 4px solid var(--c-medium-grey-ui02);
+    padding: 2px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: var(--c-black-ui04);
+  }
+
+  &__content {
+    font-weight: var(--fw-medium);
+    font-size: 0.9rem;
+    line-height: 2;
+    color: var(--c-dark-grey-ui03);
+  }
+
+  &__link {
+    color: var(--c-blue-primary-03);
+
+    &:hover,
+    &:focus {
+      color: var(--c-blue-primary-02);
+    }
+
+    &--mailto {
+      text-decoration: none;
+      border-bottom: 2px solid var(--c-blue-primary-03);
+      padding-bottom: 4px;
+
+      &:hover,
+      &:focus {
+        color: var(--c-blue-primary-02);
+        border-bottom-color: var(--c-blue-primary-02);
+      }
+    }
+  }
+}
