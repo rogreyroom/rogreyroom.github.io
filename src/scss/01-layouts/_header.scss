@@ -3,12 +3,13 @@
   .wrapper {
     max-width: 780px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: map-get($mq, large)) {
       max-width: 950px;
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: map-get($mq, x-large)) {
       grid-column: 2;
+      max-width: 690px;
     }
   }
 }

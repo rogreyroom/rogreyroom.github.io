@@ -3,21 +3,21 @@
   background-color: var(--c-black-ui04);
   padding: 7.5rem 1rem;
 
-  @media screen and (min-width: 568px) {
+  @media screen and (min-width: map-get($mq, xx-small)) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  @media screen and (min-width: 812px) {
+  @media screen and (min-width: map-get($mq, small)) {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: map-get($mq, large)) {
     padding: 8rem;
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: map-get($mq, x-large)) {
     padding-left: 0;
     padding-right: 0;
     display: grid;

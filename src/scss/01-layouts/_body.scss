@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: map-get($mq, medium)) {
     border: 1rem solid var(--c-black-ui04);
   }
 }
