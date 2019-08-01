@@ -26,6 +26,7 @@
 
   &__link {
     font-size: 0.875rem;
+    font-weight: map-get($fonts, fw-medium);
     line-height: 1.625rem;
     color: var(--c-blue-primary-03);
 

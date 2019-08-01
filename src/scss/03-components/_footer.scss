@@ -7,7 +7,9 @@
 .contact {
   &__title {
     color: var(--c-white-ui00);
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0 0 0.5rem 0;
     display: block;
     position: relative;
 
@@ -17,20 +19,24 @@
       display: block;
       width: 2.5rem;
       height: 4px;
-      top: 0;
+      border-radius: 8px;
+      position: relative;
+      top: -8px;
       left: 0;
     }
   }
 
   &__description {
     color: var(--c-white-ui00);
-    font-weight: var(--fw-light);
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    margin: 0 0 1.5rem 0;
   }
 
   &__social-list {
     list-style: none;
     padding: 0;
-    margin: 1.5rem 0 2rem 0;
+    margin: 0 0 2rem 0;
     display: flex;
   }
 
@@ -50,10 +56,13 @@
   }
 
   &__link {
-    color: var(--c-blue-primary-03);
     text-decoration: none;
-    border-bottom: 2px solid var(--c-blue-primary-03);
+    color: var(--c-blue-primary-03);
+    font-size: 0.875rem;
+    font-weight: map-get($fonts, fw-medium);
+    line-height: 1.5rem;
     padding-bottom: 4px;
+    border-bottom: 2px solid var(--c-blue-primary-03);
 
     &:hover,
     &:focus {
