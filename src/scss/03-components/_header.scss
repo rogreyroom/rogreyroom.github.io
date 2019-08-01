@@ -1,5 +1,32 @@
 // Header
 .header {
+  padding: 4rem 1rem 3.75rem 1rem;
+
+  @media screen and (min-width: map-get($mq, xx-small)) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (min-width: map-get($mq, small)) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media screen and (min-width: map-get($mq, large)) {
+    padding: 8rem 8rem 12.5rem 8rem;
+  }
+
+  @media screen and (min-width: map-get($mq, x-large)) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns:
+      minmax(8rem, 1fr)
+      minmax(auto, 1184px)
+      minmax(8rem, 1fr);
+  }
+
   &__image {
     object-fit: cover;
     object-position: center left;
@@ -8,6 +35,12 @@
     border-radius: 50%;
     border: 3px solid var(--c-medium-grey-ui02);
     padding: 3px;
+
+    @media screen and (min-width: map-get($mq, large)) {
+      width: 7.5rem;
+      height: 7.5rem;
+      border-width: 4px;
+    }
   }
 
   &__title {
@@ -15,6 +48,12 @@
     line-height: 2.25rem;
     color: var(--c-black-ui04);
     margin: 1rem 0 0.5rem 0;
+
+    @media screen and (min-width: map-get($mq, large)) {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      margin: 2rem 0 1rem 0;
+    }
   }
 
   &__content {
@@ -22,6 +61,16 @@
     line-height: 1.625rem;
     color: var(--c-dark-grey-ui03);
     margin: 0 0 2.5rem 0;
+
+    @media screen and (min-width: map-get($mq, large)) {
+      font-size: 1.25rem;
+      line-height: 2.25rem;
+      margin-bottom: 3.75rem;
+    }
+
+    @media screen and (min-width: map-get($mq, x-large)) {
+      max-width: 590px;
+    }
   }
 
   &__link {
@@ -29,6 +78,11 @@
     font-weight: map-get($fonts, fw-medium);
     line-height: 1.625rem;
     color: var(--c-blue-primary-03);
+
+    @media screen and (min-width: map-get($mq, large)) {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
 
     &:hover,
     &:focus {
@@ -39,6 +93,10 @@
       text-decoration: none;
       border-bottom: 2px solid var(--c-blue-primary-03);
       padding-bottom: 4px;
+
+      @media screen and (min-width: map-get($mq, large)) {
+        padding-bottom: 8px;
+      }
 
       &:hover,
       &:focus {
