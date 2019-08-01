@@ -1,1 +1,29 @@
 /* Page footer */
+.footer {
+  background-color: var(--c-black-ui04);
+  padding: 7.5rem 1rem;
+
+  @media screen and (min-width: 568px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (min-width: 812px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 8rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns:
+      minmax(8rem, 1fr)
+      minmax(auto, 1184px)
+      minmax(8rem, 1fr);
+  }
+}

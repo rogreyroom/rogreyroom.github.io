@@ -1,2 +1,6 @@
 /* Page main content */
-
+.main {
+  @media screen and (min-width: 1440px) {
+    grid-area: main;
+  }
+}

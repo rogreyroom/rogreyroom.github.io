@@ -36,28 +36,30 @@
   </head>
   <body>
     <header class="header">
-      <img
-        src="assets/images/me.jpg"
-        alt="Robert Adamczewski profile photo"
-        class="header__image"
-      />
-      <h1 class="header__title">
-        Hey there! 👋<br />
-        My name is Robert and I am an aspiring front-end developer and I love
-        traveling with my camera to various European cities.
-      </h1>
-      <p class="header__content">
-        Tou might be interested in checking my
-        <a href="#skills" class="header__link">skills</a>. Don’t forget to check
-        <a href="#projects" class="header__link">my projects</a>. Currently I’m
-        looking for a new challenges so if you have one -
-        <a href="#contact" class="header__link">contact me</a> 😊
-      </p>
-      <a
-        href="mailto:robert@adamczewski.me"
-        class="header__link header__link--mailto"
-        >robert@adamczewski.me</a
-      >
+      <div class="wrapper">
+        <img
+          src="assets/images/me.jpg"
+          alt="Robert Adamczewski profile photo"
+          class="header__image"
+        />
+        <h1 class="header__title">
+          Hey there! 👋<br />
+          My name is Robert and I am an aspiring front-end developer and I love
+          traveling with my camera to various European cities.
+        </h1>
+        <p class="header__content">
+          Tou might be interested in checking my
+          <a href="#skills" class="header__link">skills</a>. Don’t forget to
+          check <a href="#projects" class="header__link">my projects</a>.
+          Currently I’m looking for a new challenges so if you have one -
+          <a href="#contact" class="header__link">contact me</a> 😊
+        </p>
+        <a
+          href="mailto:robert@adamczewski.me"
+          class="header__link header__link--mailto"
+          >robert@adamczewski.me</a
+        >
+      </div>
     </header>
     <main class="main">
       <section class="skills" id="skills">
@@ -241,41 +243,79 @@
             some projects. Here’s the list of things I’ve done so far.
           </p>
         </header>
-        <section class="card">
-          <div class="card__content">
-            <img
-              src="assets/images/github.svg"
-              alt="GitHub logo"
-              class="card__image"
-            />
-            <h3 class="card__title">
-              simple-editor
-            </h3>
-            <p class="card__description">
-              simple localStorage notebook
-            </p>
-          </div>
-          <footer class="card__footer">
-            <ul class="card__list">
-              <li class="card__item card__item--website">
-                <a
-                  href="https://rogreyroom.github.io/simple-editor/"
-                  class="card__link"
-                >
-                  Demo
-                </a>
-              </li>
-              <li class="card__item card__item--repo">
-                <a
-                  href="https://github.com/rogreyroom/simple-editor"
-                  class="card__link"
-                >
-                  GitHub
-                </a>
-              </li>
-            </ul>
-          </footer>
-        </section>
+        <div class="projects__cards">
+          <section class="card">
+            <div class="card__content">
+              <img
+                src="assets/images/github.svg"
+                alt="GitHub logo"
+                class="card__image"
+              />
+              <h3 class="card__title">
+                simple-editor
+              </h3>
+              <p class="card__description">
+                simple localStorage notebook
+              </p>
+            </div>
+            <footer class="card__footer">
+              <ul class="card__list">
+                <li class="card__item card__item--website">
+                  <a
+                    href="https://rogreyroom.github.io/simple-editor/"
+                    class="card__link"
+                  >
+                    Demo
+                  </a>
+                </li>
+                <li class="card__item card__item--repo">
+                  <a
+                    href="https://github.com/rogreyroom/simple-editor"
+                    class="card__link"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </section>
+
+          <section class="card">
+            <div class="card__content">
+              <img
+                src="assets/images/github.svg"
+                alt="GitHub logo"
+                class="card__image"
+              />
+              <h3 class="card__title">
+                simple-editor
+              </h3>
+              <p class="card__description">
+                simple localStorage notebook
+              </p>
+            </div>
+            <footer class="card__footer">
+              <ul class="card__list">
+                <li class="card__item card__item--website">
+                  <a
+                    href="https://rogreyroom.github.io/simple-editor/"
+                    class="card__link"
+                  >
+                    Demo
+                  </a>
+                </li>
+                <li class="card__item card__item--repo">
+                  <a
+                    href="https://github.com/rogreyroom/simple-editor"
+                    class="card__link"
+                  >
+                    GitHub
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </section>
+        </div>
       </section>
     </main>
     <footer class="footer">
