@@ -12,7 +12,7 @@ fetch(fetchURL, {method: 'get'})
 
     for (const repo of repos) {
       let {name, html_url, homepage, description} = repo;
-      if (!/starter/.test(name) && !/io/.test(name) && !/form/.test(name)) {
+      if (!/starter/.test(name) && !/form/.test(name)) {
         let card = `
                 <section class="card">
                     <div class="card__content">
