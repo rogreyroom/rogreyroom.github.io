@@ -86,7 +86,9 @@
 
     &:hover,
     &:focus {
-      color: var(--c-blue-primary-02);
+      color: var(--c-blue-primary-04);
+      outline-color: var(--c-blue-primary-03);
+      outline-width: medium;
     }
 
     &--mailto {
@@ -100,8 +102,10 @@
 
       &:hover,
       &:focus {
-        color: var(--c-blue-primary-02);
-        border-bottom-color: var(--c-blue-primary-02);
+        color: var(--c-blue-primary-04);
+        border-bottom-color: var(--c-blue-primary-04);
+        outline-color: var(--c-blue-primary-03);
+        outline-width: medium;
       }
     }
   }

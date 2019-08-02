@@ -84,15 +84,20 @@
     padding-bottom: 4px;
     border-bottom: 2px solid var(--c-blue-primary-03);
 
+    &:hover,
+    &:focus {
+        color: var(--c-blue-primary-02);
+        border-bottom-color: var(--c-blue-primary-02);
+        outline-color: var(--c-blue-primary-03);
+        outline-width: medium;
+      }
+
     @media screen and (min-width: map-get($mq, large)) {
       font-size: 1.25rem;
       line-height: 2rem;
       padding-bottom: 8px;
     }
 
-    &:hover,
-    &:focus {
-      color: var(--c-blue-primary-02);
-    }
+
   }
 }

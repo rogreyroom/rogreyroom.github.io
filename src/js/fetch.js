@@ -9,7 +9,6 @@ fetch(fetchURL, {method: 'get'})
     return resp.json();
   })
   .then(repos => {
-    console.log(repos);
 
     for (const repo of repos) {
       let {name, html_url, homepage, description} = repo;
@@ -32,8 +31,7 @@ fetch(fetchURL, {method: 'get'})
                     <footer class="card__footer">
                     <ul class="card__list">
                     ${(() => {
-                      if (homepage !== null) {
-                        console.log(homepage);
+                      if (homepage !== null && homepage !== '') {
                         return `
                                 <li class="card__item card__item--website">
                                     <a

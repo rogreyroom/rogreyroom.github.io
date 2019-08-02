@@ -105,6 +105,14 @@
     line-height: 1.75rem;
     color: var(--c-blue-primary-03);
 
+    &:hover,
+      &:focus {
+        color: var(--c-blue-primary-04);
+        border-bottom-color: var(--c-blue-primary-04);
+        outline-color: var(--c-blue-primary-03);
+        outline-width: medium;
+      }
+
     @media screen and (min-width: map-get($mq, large)) {
       font-size: 1.125rem;
       line-height: 2rem;
