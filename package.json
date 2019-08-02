@@ -6,8 +6,8 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "build:commit": "git commit . -m \"build: new build\"",
-    "deploy": "npm run build:commit && npm run deploy:change && npm run deploy:copy && npm run deploy:commit",
+    "build:commit": "git commit . -m \"build: new build\" && git push",
+    "deploy": "npm run deploy:change && npm run deploy:copy && npm run deploy:commit",
     "deploy:change": "git checkout master && git rm -f -r --ignore-unmatch ./\\**",
     "deploy:copy": "git checkout source -- 'public/\\**' && git mv -f public/\\** ./",
     "deploy:commit": "git commit . -m \"build: website deploy `date +\"%Y-%m-%d\"`\""
