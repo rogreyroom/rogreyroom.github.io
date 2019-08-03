@@ -22,6 +22,15 @@ Robert Adamczewski homepage with github projects.
 
 To deploy public folder to **master** brunch
 
+**_npm script version_**
+
+```npm
+npm run build
+npm run deploy
+```
+
+**_git version_**
+
 ```git
 > git checkout master
 > git rm -f -r --ignore-unmatch ./**
