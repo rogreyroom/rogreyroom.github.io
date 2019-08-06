@@ -8,8 +8,8 @@
     "build": "gulp build && npm run build:commit",
     "build:commit": "git commit . -m \"build: new build\" && git push",
     "deploy": "npm run deploy:clear && npm run deploy:copy && npm run extract && npm run deploy:commit",
-    "deploy:clear": "git checkout master && git rm -f -r --ignore-unmatch ./** !(package.json)",
-    "deploy:copy": "git checkout source -- package.json && git checkout source -- 'public/**'",
+    "deploy:clear": "git checkout master && git rm -f -r --ignore-unmatch ./** :^'package.json'",
+    "deploy:copy": "git checkout source -- 'public/**'",
     "deploy:extract": "git mv -f public/** ./",
     "deploy:commit": "git commit . -m \"build: website deploy `date +\"%Y-%m-%d\"`\" && git push"
   },
