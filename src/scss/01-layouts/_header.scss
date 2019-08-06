@@ -1,0 +1,15 @@
+/* Page header */
+.header {
+  .wrapper {
+    max-width: 780px;
+
+    @media screen and (min-width: map-get($mq, large)) {
+      max-width: 950px;
+    }
+
+    @media screen and (min-width: map-get($mq, x-large)) {
+      grid-column: 2;
+      max-width: 690px;
+    }
+  }
+}

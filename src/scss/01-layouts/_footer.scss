@@ -1,0 +1,29 @@
+/* Page footer */
+.footer {
+  background-color: var(--c-black-ui04);
+  padding: 7.5rem 1rem;
+
+  @media screen and (min-width: map-get($mq, xx-small)) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (min-width: map-get($mq, small)) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @media screen and (min-width: map-get($mq, large)) {
+    padding: 8rem;
+  }
+
+  @media screen and (min-width: map-get($mq, x-large)) {
+    padding-left: 0;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns:
+      minmax(8rem, 1fr)
+      minmax(auto, 1184px)
+      minmax(8rem, 1fr);
+  }
+}

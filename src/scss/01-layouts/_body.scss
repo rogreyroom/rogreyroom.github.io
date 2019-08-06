@@ -1,0 +1,10 @@
+/* Body layout */
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: map-get($mq, medium)) {
+    border: 1rem solid var(--c-black-ui04);
+  }
+}
